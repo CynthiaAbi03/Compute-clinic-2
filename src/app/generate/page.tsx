@@ -2,6 +2,7 @@ import Image from "next/image";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 //import { Button } from "@/components/ui/button"
 import bgcompute from "../../../public/image.png";
+import RegisterClinicCard from "@/components/RegisterClinicCard";
 
 function page() {
   return (
@@ -17,7 +18,9 @@ function page() {
         </AspectRatio>
         
       </div>
-      <div className="bg-green-200 h-2/3 w-full">2</div>
+      <div className="h-2/3 w-full flex justify-center items-center">
+        <RegisterClinicCard />
+      </div>
     </div>
   );
 }
