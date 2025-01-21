@@ -50,23 +50,18 @@ export function ComboboxDemo({
               {dropdownData.find((data) => data === dropdownValue)}
             </span>
           ) : (
-            <span className="paragraph-medium-medium text-[13.5px] text-customBlack-300">
-              Selectionner...
+            <span className="paragraph-medium-medium font-normal text-[15px] text-customBlack-300">
+              Select...
             </span>
           )}
           <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="w-[440px] p-0">
+      <PopoverContent className="w-[500px] p-0">
         <Command>
-          <CommandInput placeholder="Rechercher..." />
+          <CommandInput placeholder="Search..." />
           <CommandList>
-            <CommandEmpty>
-              {type == 'symptôme'
-                ? 'Aucune symptôme trouvée'
-                : 'Aucun diagnostic trouvê'}
-              .
-            </CommandEmpty>
+            <CommandEmpty>{`No ${type} found`}</CommandEmpty>
             <CommandGroup>
               {dropdownData.map((data, index) => (
                 <CommandItem

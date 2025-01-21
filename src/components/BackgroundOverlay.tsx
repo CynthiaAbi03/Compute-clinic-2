@@ -12,11 +12,11 @@ const BackgroundOverlay = () => {
         className="background-image"
       />
       <div className="text-overlay">
-        <h1 className="h1-custom-bold">Générateur de Cas Cliniques</h1>
+        <h1 className="h1-custom-bold">Clinical Case Generator</h1>
         <p className="text-[18px] font-regular paragraph-large-regular">
-          Générez des cas cliniques réalistes basés sur des données médicales
-          réelles. Personnalisez les symptômes, le diagnostic et le traitement
-          pour simuler des scénarios réels, parfait pour tous.
+          Generate realistic clinical cases based on real medical data.
+          Customise symptoms, diagnosis and treatment to simulate real-life
+          scenarios, perfect for everyone.
         </p>
       </div>
     </div>
